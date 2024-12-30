@@ -1,12 +1,13 @@
 import DoctorCard from "./DoctorCard"
 
-export default function DoctorsGrid({doctors}){
-    let doctores = doctors.map(function(doctor, key) {
+export default function DoctorsGrid(props){
+    let doctores = props.doctors.map(function(doctor, key) {
         return <DoctorCard doctor={doctor} key={key}/>
       });
     return (
         <>
-            <div className="grid grid-cols-4 gap-2">
+            <h1 className="mt-6 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">Personal médico</h1>
+            <div className="grid grid-cols-4 gap-2 place-items-center">
                 {doctores}
             </div>
         </>

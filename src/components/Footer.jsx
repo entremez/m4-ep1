@@ -1,7 +1,7 @@
 
 export default function Footer() {
   return (
-    <div className="text-center">
+    <div className="text-center py-5">
     <a href="#" className="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900">
         <img src="https://www.svgrepo.com/show/530664/genetic-research.svg" className="h-12 mr-3 sm:h-9" alt="Landwind Logo" />
 		Hospital YHF
